@@ -8,15 +8,30 @@ const apiKey = 'pSxxXBpunBnBT0mIoP_m6VTEy32nmGTOG8xO5_9ehd8uIPpSgZvaSTxqmVoNdR_O
 
 const searchRequest = {
   term:'Four Barrel Coffee',
-  location: 'san francisco, ca'
+  location: 'Redwood City',
+  categories: 'icecream',
+  limit: 10,
+  sort_by: "rating",
+
 };
 
 const client = yelp.client(apiKey);
 
-client.search(searchRequest).then(response => {
-  const firstResult = response.jsonBody.businesses[0];
-  const prettyJson = JSON.stringify(firstResult, null, 4);
-  console.log(prettyJson);
+async function fetchTopIceCreamParlour(){
+    var result = await client.search(searchRequest);
+    return result.jsonBody.businesses;
+}
+ 
+fetchTopIceCreamParlour().then(result=>{
+    console.log(JSON.stringify(result,undefined,2));
 }).catch(e => {
-  console.log(e);
-});
+      console.log(e);
+ });
+
+// client.search(searchRequest).then(response => {
+//   const result = response.jsonBody.businesses;
+//   const prettyJson = JSON.stringify(result, null, 4);
+//   console.log(prettyJson);
+// }).catch(e => {
+//   console.log(e);
+// });
