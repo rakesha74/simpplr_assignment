@@ -1,9 +1,11 @@
 # simpplr_assignment (Integration Of Fusion API to get Top 10 Ice cream Parlour in Redwood city with reviews)
 
 Clone the repo using url: 
-https://github.com/rakesha74/simpplr_assignment.git
+git clone https://github.com/rakesha74/simpplr_assignment.git
 
-After downloading the code. Run command: 
+After downloading the code. Change directory to simpplr_assignment
+
+After changing directory. Run command: 
 npm install
 
 After all the dependencies insatlled. Run command: 

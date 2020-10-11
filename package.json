@@ -1,0 +1,28 @@
+{
+  "name": "simpplr_assignment",
+  "version": "1.0.0",
+  "description": "Integarte Fusin API for fetching Top 10 ice cream parlour with reviews ",
+  "main": "iceCream.js",
+  "dependencies": {
+    "util": "^0.12.3",
+    "yelp-fusion": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakesha74/simpplr_assignment.git"
+  },
+  "keywords": [
+    "Fusion",
+    "Api"
+  ],
+  "author": "Rakesh Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakesha74/simpplr_assignment/issues"
+  },
+  "homepage": "https://github.com/rakesha74/simpplr_assignment#readme"
+}
